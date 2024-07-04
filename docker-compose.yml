@@ -62,7 +62,7 @@ services:
     build:
       context: ./Back-end/evento-service
     container_name: evento-service
-    image: inncursio197/evento-service:latest  # Etiqueta para Docker Hub
+    image: inncursio197/evento-service:latest  # Etiqueta para Docker Hub prueba
     ports:
       - "4000:4000"
     depends_on:
