@@ -71,6 +71,10 @@ jobs:
           docker-compose -f ./docker-compose.yml build
           docker-compose -f ./docker-compose.yml push
 
+      - name: Stop and remove any existing containers
+        run: |
+          docker-compose -f ./docker-compose.yml down
+
       - name: Deploy services
         run: |
           docker-compose -f ./docker-compose.yml up -d
