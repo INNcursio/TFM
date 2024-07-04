@@ -29,6 +29,7 @@ services:
     build:
       context: ./Back-end/foro-blog
     container_name: foroblog-app
+    image: inncursio197/foroblog-app:latest  # Etiqueta para Docker Hub
     ports:
       - "3000:3000"
     depends_on:
@@ -46,6 +47,7 @@ services:
     build:
       context: ./Front-end/foroblog-frontend
     container_name: foroblog-frontend
+    image: inncursio197/foroblog-frontend:latest  # Etiqueta para Docker Hub
     ports:
       - "3001:3001"
     depends_on:
@@ -60,6 +62,7 @@ services:
     build:
       context: ./Back-end/evento-service
     container_name: evento-service
+    image: inncursio197/evento-service:latest  # Etiqueta para Docker Hub
     ports:
       - "4000:4000"
     depends_on:
