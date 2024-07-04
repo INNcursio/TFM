@@ -1,0 +1,38 @@
+/* src/pages/ProfilePage.css */
+.user-profile {
+    margin-top: 20px;
+}
+
+.followed-blogs-card {
+    margin-bottom: 20px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+}
+
+/* Styling for the followed blogs */
+.followed-blog-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.followed-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    object-fit: cover;
+    height: 180px;
+}
+
+.card-body {
+    height: 150px;
+    overflow: hidden;
+}

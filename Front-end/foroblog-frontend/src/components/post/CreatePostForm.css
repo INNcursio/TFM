@@ -1,0 +1,49 @@
+/* src/components/CreatePostForm.css */
+.modal-header {
+    background-color: #000;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    color: white;
+  }
+  
+  .modal-body {
+    background-color: #fff;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #333;
+    border-color: #333;
+  }
+  
+  .submit-button .fa-paper-plane {
+    margin-right: 8px;
+  }
+  

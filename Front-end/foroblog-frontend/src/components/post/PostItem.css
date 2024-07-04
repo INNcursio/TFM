@@ -1,0 +1,67 @@
+/* src/components/PostItem.css */
+.post-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  max-width: 700px;
+  margin: 0 0 20px 0; /* Margin bottom for spacing */
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 20%; /* Altura fija para el Card.Body */
+  overflow: hidden;
+}
+
+.post-content {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 15px;
+  flex: 1; /* Permitir que el contenido tome el espacio disponible */
+  overflow-y: auto; /* Habilitar el desplazamiento vertical */
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 15px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+}
+
+.post-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #000; /* Cambiar color a negro */
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.post-action:hover {
+  color: #555; /* Color al pasar el mouse */
+}
+
+.post-action .fa-thumbs-up,
+.post-action .fa-comment,
+.post-action .fa-share {
+  margin-right: 5px;
+}

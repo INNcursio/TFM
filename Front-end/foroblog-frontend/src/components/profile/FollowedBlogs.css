@@ -1,0 +1,31 @@
+/* src/components/profile/FollowedBlogs.css */
+.followed-blog-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    height: 100%;
+}
+
+.followed-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.followed-blog-card img {
+    object-fit: cover;
+    height: 180px;
+}
+
+.followed-blog-card .card-body {
+    height: 150px;
+    overflow: hidden;
+}
+
+.followed-blog-card .blog-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.followed-blog-card .blog-description {
+    font-size: 1rem;
+    color: #555;
+}

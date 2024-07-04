@@ -1,0 +1,22 @@
+/* src/pages/BlogPage.css */
+.blog-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-card-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limitar a 3 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  

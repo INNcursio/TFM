@@ -1,0 +1,18 @@
+/* src/components/common/NavBar.css */
+.navbar {
+    font-size: 1.1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffdd57 !important;
+  }
+  
+  .nav-link {
+    color: #d1e7dd !important;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff !important;
+  }
+  

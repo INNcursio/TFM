@@ -1,0 +1,43 @@
+/* src/components/comment/CommentItem.css */
+.comment-item {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.comment-item:hover {
+  background-color: #e9e9e9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.comment-content {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.comment-meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-actions button {
+  font-size: 12px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.comment-actions button:hover {
+  color: #888;
+}
