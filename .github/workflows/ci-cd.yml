@@ -73,7 +73,18 @@ jobs:
 
       - name: Stop and remove any existing containers
         run: |
-          docker-compose -f ./docker-compose.yml down
+          docker ps -q --filter "ancestor=mongo:4.2" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=mongo-express:latest" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=nats:latest" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=eventstore/eventstore:latest" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=inncursio197/evento-service:latest" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=inncursio197/foroblog-app:latest" | xargs -r docker stop | xargs -r docker rm
+          docker ps -q --filter "ancestor=inncursio197/foroblog-frontend:latest" | xargs -r docker stop | xargs -r docker rm
+
+      - name: Clean up networks and volumes
+        run: |
+          docker network prune -f
+          docker volume prune -f
 
       - name: Deploy services
         run: |
